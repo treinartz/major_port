@@ -1,0 +1,67 @@
+.code-block {
+  margin-top: 20px;
+}
+
+.toggle-button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-button:hover {
+  background-color: #4fa8c5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(97, 218, 251, 0.3);
+}
+
+.toggle-button:active {
+  transform: translateY(0);
+}
+
+.code-content {
+  background-color: #1e1e1e;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  overflow-x: auto;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.code-content code {
+  color: #d4d4d4;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+/* Custom scrollbar */
+.code-content::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.code-content::-webkit-scrollbar-track {
+  background: #282c34;
+  border-radius: 5px;
+}
+
+.code-content::-webkit-scrollbar-thumb {
+  background: #61dafb;
+  border-radius: 5px;
+}
+
+.code-content::-webkit-scrollbar-thumb:hover {
+  background: #4fa8c5;
+}

@@ -1,0 +1,130 @@
+.project-card {
+  border: 2px solid #61dafb;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px 0;
+  background-color: #282c34;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(97, 218, 251, 0.2);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #61dafb;
+  padding-bottom: 10px;
+}
+
+.card-header h3 {
+  color: #61dafb;
+  font-size: 1.8rem;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.like-button {
+  background-color: transparent;
+  border: 2px solid #61dafb;
+  color: #61dafb;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.like-button:hover {
+  background-color: rgba(97, 218, 251, 0.1);
+  transform: scale(1.05);
+}
+
+.like-button.liked {
+  background-color: rgba(255, 100, 150, 0.2);
+  border-color: #ff6496;
+  color: #ff6496;
+}
+
+.like-button:active {
+  transform: scale(0.95);
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .card-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.visual-section img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #61dafb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.visual-section img:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description,
+.reflection {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #61dafb;
+}
+
+.description h4,
+.reflection h4 {
+  color: #61dafb;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.description p,
+.reflection p {
+  line-height: 1.6;
+  color: #abb2bf;
+  margin: 0;
+}
+
+.view-detail-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.view-detail-link:hover {
+  transform: translateX(5px);
+  color: #4fa8c5;
+}
