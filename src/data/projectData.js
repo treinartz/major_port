@@ -7,7 +7,7 @@ const projectsData = [
       "Explored p5.js variables to create dynamic shapes that respond to mouse movement. Learned how variables store and update values.",
     reflection:
       "The hardest part was understanding how variables update each frame. I learned that p5.js redraws constantly, so variables need to be updated in draw().",
-    gifPath: "/gifs/week1-variables.gif",
+    gifPath: "gifs/week1-variables.gif",
     code: `function setup() {
   createCanvas(400, 400);
 }
@@ -27,7 +27,7 @@ function draw() {
       "Created custom functions to draw complex patterns. Functions help organize code and make it reusable.",
     reflection:
       "Learning to pass parameters to functions was tricky at first, but it makes code so much more flexible!",
-    gifPath: "/gifs/week2-functions.gif",
+    gifPath: "gifs/week2-functions.gif",
     code: `function setup() {
   createCanvas(400, 400);
 }
@@ -53,7 +53,7 @@ function drawFlower(x, y, size) {
       "Used if/else statements to create interactive elements that change based on user input.",
     reflection:
       "Conditionals opened up so many possibilities! Now my sketches can respond differently to different situations.",
-    gifPath: "/gifs/week3-conditionals.gif",
+    gifPath: "gifs/week3-conditionals.gif",
     code: `function setup() {
   createCanvas(400, 400);
 }
